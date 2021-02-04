@@ -3,16 +3,16 @@ services:
   chrome:
     image: selenium/standalone-chrome:3.12
 
-  acceptance:
+  testing:
     image: b13gmbh/php-builder:7.4
     user: ${HOST_UID}
     links:
       - chrome
     volumes:
-      - ${ROOT_DIR}:/acceptance
+      - ${ROOT_DIR}:/testing
     command: >
       /bin/sh -c "
-      cd /acceptance;
+      cd /testing;
       composer install;
       php vendor/bin/codecept run --steps
       "

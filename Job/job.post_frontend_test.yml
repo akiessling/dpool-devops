@@ -12,4 +12,4 @@ post_frontend_test:
       - Tests/_data/VisualCeption
       - Tests/_output/debug
   script:
-    - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/run)
+    - bash <(curl -s https://raw.githubusercontent.com/dpool/devops/main/run)

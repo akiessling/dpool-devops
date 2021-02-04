@@ -5,7 +5,7 @@ composer:
     - test
     - production
   script:
-    - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/Job/Script/job.composer.script.bash)
+    - bash <(curl -s https://raw.githubusercontent.com/dpool/devops/main/Job/Script/job.composer.script.bash)
   artifacts:
     expire_in: 60 minutes
     paths:

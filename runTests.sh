@@ -13,7 +13,7 @@ else
 fi
 cd .Build
 setUpDockerComposeDotEnv
-docker-compose run acceptance
+docker-compose run testing
 SUITE_EXIT_CODE=$?
 docker-compose down
 exit $SUITE_EXIT_CODE

@@ -4,7 +4,7 @@ deploy_integration:
     REMOTE_PATH: $REMOTE_PATH_INTEGRATION
   stage: deployintegration
   script:
-    - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/Job/Script/job.deploy.script.bash)
+    - bash <(curl -s https://raw.githubusercontent.com/dpool/devops/main/Job/Script/job.deploy.script.bash)
   dependencies:
     - composer
     - npm

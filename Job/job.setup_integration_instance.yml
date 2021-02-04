@@ -4,4 +4,4 @@ setup_integration_instance:
   only:
     - production
   script:
-    - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/Job/Script/job.setup_integration_instance.script.bash)
+    - bash <(curl -s https://raw.githubusercontent.com/dpool/devops/main/Job/Script/job.setup_integration_instance.script.bash)

@@ -1,11 +1,11 @@
 #!/bin/bash
 mkdir .Build
 cd .Build
-wget https://raw.githubusercontent.com/dpool/test-base/main/docker-compose.yml
-wget https://raw.githubusercontent.com/dpool/test-base/main/runTests.sh
+wget https://raw.githubusercontent.com/dpool/devops/main/docker-compose.yml
+wget https://raw.githubusercontent.com/dpool/devops/main/runTests.sh
 cd ../
 rm composer.json
 rm composer.lock
-wget https://raw.githubusercontent.com/dpool/test-base/main/composer.json
-wget https://raw.githubusercontent.com/dpool/test-base/main/composer.lock
+wget https://raw.githubusercontent.com/dpool/devops/main/composer.json
+wget https://raw.githubusercontent.com/dpool/devops/main/composer.lock
 sh .Build/runTests.sh
