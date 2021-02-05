@@ -2,6 +2,8 @@ version: '2.3'
 services:
   chrome:
     image: selenium/standalone-chrome:3.12
+    volumes:
+      - /dev/shm:/dev/shm
 
   testing:
     image: b13gmbh/php-builder:7.4
