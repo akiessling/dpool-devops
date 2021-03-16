@@ -4,6 +4,8 @@ composer:
   only:
     - test
     - production
+  before_script:
+    - echo "$COMPOSER_AUTH_JSON" > $CI_PROJECT_DIR/src/htdocs/auth.json
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/devops/main/Job/Script/job.composer.script.bash)
   artifacts:
