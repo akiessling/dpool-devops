@@ -2,13 +2,12 @@ deploy_prod_manual:
   tags: [ docker ]
   variables:
       REMOTE_PATH: $REMOTE_PATH_PROD
-  stage: deploy
+  stage: deployintegration
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/devops/main/Job/Script/job.deploy.script.bash)
   dependencies:
     - composer
     - npm
-  allow_failure: true
   only:
     - production
   when: manual
