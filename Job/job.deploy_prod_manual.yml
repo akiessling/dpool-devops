@@ -6,11 +6,9 @@ deploy_prod_manual:
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/devops/main/Job/Script/job.deploy.script.bash)
   dependencies:
-    - composer
     - npm
   only:
     - production
   when: manual
   needs:
-    - composer
     - npm
