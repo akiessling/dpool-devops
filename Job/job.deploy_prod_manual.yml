@@ -11,4 +11,6 @@ deploy_prod_manual:
   only:
     - production
   when: manual
-  needs: ["npm"]
+  needs:
+    - composer
+    - npm
