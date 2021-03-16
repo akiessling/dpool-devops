@@ -2,7 +2,7 @@ deploy_prod_manual:
   tags: [ docker ]
   variables:
       REMOTE_PATH: $REMOTE_PATH_PROD
-  stage: deployintegration
+  stage: integration
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/devops/main/Job/Script/job.deploy.script.bash)
   dependencies:
