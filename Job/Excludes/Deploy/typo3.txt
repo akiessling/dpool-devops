@@ -1,0 +1,13 @@
+/backups
+/public/fileadmin
+/public/typo3conf/LocalConfiguration.php
+/public/typo3conf/PackageStates.php
+/public/typo3conf/l10n
+/public/typo3temp
+/public/uploads
+/public/.htaccess
+/public/.htaccess.*
+/public/.htpasswd
+/public/.htpasswd.mittwald
+/var
+/.env

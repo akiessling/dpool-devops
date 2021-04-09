@@ -1,0 +1,16 @@
+/.Build
+/.git
+/.ddev
+/.gitlab-ci.yml
+/composer.json
+/composer.lock
+/composer.phar
+/package.json
+/package-lock.json
+/Gulpfile.js
+/gulp-config.js
+/git-pull.sh
+/sync_media.sh
+/auth.json
+/Patches
+.gitignore
