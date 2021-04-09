@@ -5,5 +5,10 @@
         "codeception/module-asserts": "^1.0.0",
         "codeception/module-webdriver": "^1.2",
         "codeception/visualception": "1.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dpool\\AcceptanceTesting\\": "Tests/acceptance/"
+        }
     }
 }
