@@ -7,7 +7,9 @@ ssh -o StrictHostKeyChecking=no -p $SSH_PORT $SSH_LOGIN "
   php "$REMOTE_PATH"vendor/bin/typo3cms cache:flush --files-only
   php "$REMOTE_PATH"vendor/bin/typo3cms database:updateschema 'safe'
   php "$REMOTE_PATH"vendor/bin/typo3cms install:generatepackagestates
+  cd public
   php "$REMOTE_PATH"vendor/bin/typo3cms install:fixfolderstructure
+  cd ../
   php "$REMOTE_PATH"vendor/bin/typo3cms extension:setupactive
   php "$REMOTE_PATH"vendor/bin/typo3cms database:updateschema 'destructive'
   php "$REMOTE_PATH"vendor/bin/typo3cms cache:flush"
