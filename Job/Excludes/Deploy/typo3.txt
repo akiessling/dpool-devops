@@ -11,3 +11,4 @@
 /public/.htpasswd.mittwald
 /var
 /.env
+/typo3.txt
