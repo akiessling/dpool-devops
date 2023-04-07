@@ -4,7 +4,7 @@ deploy_test:
     REMOTE_PATH: $REMOTE_PATH_TEST
   stage: deploy
   script:
-    - bash <(curl -s https://raw.githubusercontent.com/dpool/devops/main/Job/Script/job.deploy.script.bash)
+    - bash <(curl -s https://raw.githubusercontent.com/akiessling/dpool-devops/main/Job/Script/job.deploy.script.bash)
   dependencies:
     - composer
     - npm

@@ -10,5 +10,5 @@ export COMPOSER_NO_INTERACTION=1
 ./composer.phar install --no-dev --prefer-dist --optimize-autoloader
 ./composer.phar dumpautoload --optimize
 rm composer.phar
-wget https://raw.githubusercontent.com/dpool/devops/main/Job/Excludes/Build/typo3.txt
+wget https://raw.githubusercontent.com/akiessling/dpool-devops/main/Job/Excludes/Build/typo3.txt
 rsync -rlp ./ .Build/ --exclude-from=./typo3.txt

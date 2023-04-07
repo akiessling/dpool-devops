@@ -9,4 +9,4 @@ pre_frontend_test:
     paths:
       - Tests/_data/VisualCeption
   script:
-    - bash <(curl -s https://raw.githubusercontent.com/dpool/devops/main/run)
+    - bash <(curl -s https://raw.githubusercontent.com/akiessling/dpool-devops/main/run)

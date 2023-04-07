@@ -7,7 +7,7 @@ composer:
   before_script:
     - touch $CI_PROJECT_DIR/auth.json && echo "$COMPOSER_AUTH_JSON" > $CI_PROJECT_DIR/auth.json
   script:
-    - bash <(curl -s https://raw.githubusercontent.com/dpool/devops/main/Job/Script/job.composer.script.bash)
+    - bash <(curl -s https://raw.githubusercontent.com/akiessling/dpool-devops/main/Job/Script/job.composer.script.bash)
   artifacts:
     expire_in: 60 minutes
     paths:
