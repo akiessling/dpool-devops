@@ -5,7 +5,6 @@ rsync -rlp -e "ssh -o StrictHostKeyChecking=no -p $SSH_PORT" --delete --exclude-
 ssh -o StrictHostKeyChecking=no -p $SSH_PORT $SSH_LOGIN "
   php "$REMOTE_PATH"vendor/bin/typo3cms database:export | gzip > "$REMOTE_PATH"backups/databases/beforedeploy.gz
   php "$REMOTE_PATH"vendor/bin/typo3cms cache:flush
-  php "$REMOTE_PATH"vendor/bin/typo3cms database:updateschema 'safe'
+  php "$REMOTE_PATH"vendor/bin/typo3cms database:updateschema
   php "$REMOTE_PATH"vendor/bin/typo3cms install:fixfolderstructure
-  php "$REMOTE_PATH"vendor/bin/typo3cms database:updateschema 'destructive'
   php "$REMOTE_PATH"vendor/bin/typo3cms cache:flush"
