@@ -1,4 +1,5 @@
 /backups
+/fileadmin_secure
 /public/fileadmin
 /public/typo3conf/LocalConfiguration.php
 /public/typo3conf/PackageStates.php
